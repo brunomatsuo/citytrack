@@ -1,6 +1,8 @@
 // Config
 const express = require('express');
 const app = express();
+const port = process.env.PORT || "1337";
+app.set("port", port);
 const mongoose = require('mongoose');
 const cors = require('cors');
 // Database
